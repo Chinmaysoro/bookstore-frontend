@@ -74,7 +74,7 @@ function Placeorder() {
       //   theme: "dark",
       //   });
       const {session_url} = response.data;
-      window.location.replace("/myorders");
+      window.location.replace("/");
     }
   };
 
@@ -128,7 +128,7 @@ function Placeorder() {
       //   theme: "dark",
       //   });
     const {session_url} = response.data;
-    window.location.replace("/myorders");
+    window.location.replace("/");
 
   };
 
