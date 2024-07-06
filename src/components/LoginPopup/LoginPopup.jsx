@@ -26,7 +26,8 @@ function LoginPopup({ setShowLogin }) {
 
     //--login button click function
     const onLogin = async (event) => {
-        event.preventDefault();
+        try {
+            event.preventDefault();
 
         //--storing url in variable
         let newUrl = url;
@@ -69,6 +70,10 @@ function LoginPopup({ setShowLogin }) {
                 progress: undefined,
                 theme: "dark",
                 });
+        }
+        } catch (error) {
+            // console.log(error);
+            toast.error(error)
         }
     };
 
